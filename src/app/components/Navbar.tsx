@@ -24,7 +24,7 @@ export default function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/about" className={getLinkClass('/about')}>
+                    <Link href="/bio" className={getLinkClass('/bio')}>
                         Bio
                     </Link>
                 </li>
