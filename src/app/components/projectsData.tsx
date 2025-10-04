@@ -6,6 +6,7 @@ type Project = {
     date: string;
 }
 
+// all projects detalis
 export const projectsData: Project[] = [
     {
         id: 1,

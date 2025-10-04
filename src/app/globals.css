@@ -78,6 +78,7 @@ main p {
   margin-bottom: 1.5rem;
 }
 
+/* Navigation */
 nav {
   background-color: var(--color-bg-box);
   border-bottom: 1px solid var(--color-border);
@@ -136,6 +137,7 @@ nav {
   }
 }
 
+/* Image */
 main img {
   border-radius: 0.75rem;
   margin-bottom: 2rem;
@@ -151,6 +153,7 @@ main img:hover {
   transform: scale(1.02);
 }
 
+/* List */
 main ul {
   list-style: none;
   padding: 0;
@@ -204,6 +207,7 @@ main ul li div {
   border-radius: 0.375rem;
 }
 
+/* Image inside list */
 main ul li img {
   display: block;
   width: 100%;
@@ -235,6 +239,7 @@ main ul > img {
   }
 }
 
+/* Form */
 main form {
   max-width: 400px;
   width: 100%;
@@ -308,6 +313,7 @@ main form div p {
   padding: 0;
 }
 
+/* Footer */
 footer {
   background-color: var(--color-bg-box);
   border-top: 1px solid var(--color-border);
