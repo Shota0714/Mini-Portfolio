@@ -1,7 +1,7 @@
 import PageTitle from "../components/PageTitle";
 import Link from "next/link";
 import { projectsData } from "../components/projectsData";
-
+import Image from "next/image";
 
 export default function Projects() {
     return (
@@ -14,7 +14,7 @@ export default function Projects() {
                         <Link href={`/projects/${project.id}`}>
                             {project.title}
                         </Link>
-                        <div>{project.image}</div>
+                        <div><Image src={project.image} alt="class" width="500" height="334" /></div>
                     </li>
                 ))}
             </ul>

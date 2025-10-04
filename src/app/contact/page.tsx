@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function Contact() {
     const [ fullName, setFullName ] = useState<string>('');
-    const [ phoneNumber, setPhoneNumber ] = useState<integer>('');
+    const [ phoneNumber, setPhoneNumber ] = useState<string>('');
     const [ message, setMessage ] = useState<string>('');
     const [ confirmation, setConfirmation ] = useState<string>('');
 

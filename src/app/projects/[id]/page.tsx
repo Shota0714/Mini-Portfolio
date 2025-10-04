@@ -1,13 +1,6 @@
 import PageTitle from "../../components/PageTitle";
 import { projectsData } from "../../components/projectsData";
-
-type Project = {
-    id: number;
-    image: string;
-    title: string;
-    description: string;
-    date: string;
-}
+import Image from "next/image";
 
 export default function Project({ params }: { params: { id: number } }) {
     const projectId = Number(params.id);
@@ -24,7 +17,7 @@ export default function Project({ params }: { params: { id: number } }) {
             <PageTitle title="project" />
             <main key={project.id}>
                 <h1>{project.title}</h1>
-                <div>{project.image}</div>
+                <div><Image src={project.image} alt="class" width="500" height="334" /></div>
                 <p>{project.description}</p>
                 <p>{project.date}</p>
             </main>
