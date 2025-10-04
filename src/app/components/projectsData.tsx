@@ -1,13 +1,5 @@
 import Image from "next/image";
 
-type Project = {
-    id: number;
-    image: string;
-    title: string;
-    description: string;
-    date: string;
-}
-
 export const projectsData: Project[] = [
     {
         id: 1,

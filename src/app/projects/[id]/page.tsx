@@ -1,6 +1,14 @@
 import PageTitle from "../../components/PageTitle";
 import { projectsData } from "../../components/projectsData";
 
+type Project = {
+    id: number;
+    image: string;
+    title: string;
+    description: string;
+    date: string;
+}
+
 export default function Project({ params }: { params: { id: number } }) {
     const projectId = Number(params.id);
     const project = projectsData.find(params => params.id === projectId);
