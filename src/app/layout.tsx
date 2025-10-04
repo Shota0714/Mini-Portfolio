@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 import Navbar from './components/Navbar';
 
@@ -31,6 +32,20 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <footer>
+          <ul>
+            <li>
+              <Link href="https://www.linkedin.com/in/shota0714/">
+                LinkedIn
+              </Link>
+            </li>
+            <li>
+              <Link href="https://github.com/Shota0714">
+                Github
+              </Link>
+            </li>
+          </ul>
+        </footer>
       </body>
     </html>
   );
